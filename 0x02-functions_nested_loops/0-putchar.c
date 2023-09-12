@@ -1,12 +1,10 @@
-#include "main.h"
 /**
- * main - Entry _putchar
+ * main - Print _putchar
  * is written by mbah
- * Return: Always 0
+ * Return: 0
  */
 
 int main(void)
-
 {
 _putchar('_');	
 _putchar('p');
