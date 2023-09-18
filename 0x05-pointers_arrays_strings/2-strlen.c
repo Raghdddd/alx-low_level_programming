@@ -3,19 +3,22 @@
 /**
  * _strlen - Function that returns the length of a string
  *
- * @s: string to evaluate
+ * @s: input string
  *
- * Return: length of the string
- *
+ * Return: Lenngth of string
  */
 
-int _strlen(char *s)
+int _strlen(char *s);
 {
 	int r;
 
 	r = 0;
 
-	for (r = 0; s[r] != '\0' ; r++)
+	while (s[r] != '\0')
+
+	{
+		r++;
+	}
 
 	return (r);
 }
