@@ -1,26 +1,23 @@
-#include "holberton.h"
-#include <ctype.h>
+#include "main.h"
+
 /**
- * print_sign - prints ths sign of a number
- * @n: number to check
+ * reverse_array - reverse array of integers
  *
- * Return: 1 if is positive, -1 if is negative, 0 if is zero
+ * @a: array
+ * @n: number of elements of array
+ *
+ * Return: void
  */
-int print_sign(int n)
+
+void reverse_array(int *a, int n)
 {
-	if (n > 0)
+	int m, o;
+
+	for (m = 0; m < n; m++)
 	{
-		_putchar('+');
-		return (1);
-	}
-	else if (n == 0)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else
-	{
-		_putchar('-');
-		return (-1);
+		n--;
+		o = a[m];
+		a[m] = a[n];
+		a[n] = o;
 	}
 }
