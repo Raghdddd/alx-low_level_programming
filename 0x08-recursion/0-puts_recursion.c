@@ -1,10 +1,11 @@
 #include "main.h"
+
 /**
  * _puts_recursion - recursive function to print to screen 
  *
  * @s: pointer to the string
  *
- * Rwturn : nothing
+ * Return : nothing
  */
 void _puts_recursion(char *s)
 {
