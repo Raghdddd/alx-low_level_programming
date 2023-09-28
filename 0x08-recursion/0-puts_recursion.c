@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts_recursion - Print a string
+ * _puts_recursion - Prints a string
  *
  * @s: string
  *
- * Return: nothing
+ * Return: 0
  *
  */
 
