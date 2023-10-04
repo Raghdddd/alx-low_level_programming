@@ -1,29 +1,30 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create_array - look who
+ * _strdup - he tell
  *
- * @size: we
+ * @str: girl ur the best
  *
- * @c: are
- *
- * Return: you & i
+ * Return: but i already know who what im
  */
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	char *cr;
-	unsigned int t;
+	char *strout;
+	unsigned int a, g;
 
-	if (size == 0)
+	if (str == NULL)
 		return (NULL);
 
-	cr = malloc(sizeof(c) * size);
+	for (a = 0; str[a] != '\0'; a++)
+		;
 
-	if (cr == NULL)
+	strout = (char *)malloc(sizeof(char) * (a + 1));
+
+	if (strout == NULL)
 		return (NULL);
 
-	for (t = 0; t < size; t++)
-		cr[t] = c;
+	for (g = 0; g <= a; g++)
+		strout[g] = str[g];
 
-	return (cr);
+	return (strout);
 }
