@@ -3,7 +3,7 @@
 /**
  * create_array - too much
  *
- * @size: here we go 
+ * @size: here we go
  *
  * @c: again
  *
