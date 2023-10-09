@@ -2,14 +2,16 @@
 #include <stdlib.h>
 
 /**
- * _realloc - ln yaf3l
+ * _realloc - cant shaf3a
  *
- * @ptr: hay samar lono
- * @old_size: she mkes
- * @new_size: These turn up 
+ * @ptr: wa
+ * @old_size: ana
  *
- * Return: thier nose
+ * @new_size: alhub
+ *
+ * Return: alamta
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *mem;
