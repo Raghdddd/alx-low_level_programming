@@ -1,51 +1,54 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * *_realloc - if you 
+ * _realloc - ln yaf3l
  *
- * @ptr: leave me
- * @old_size: i could di
- * @new_size: i swear
+ * @ptr: hay samar lono
+ * @old_size: she mkes
+ * @new_size: These turn up 
  *
- * Return: youre like the oxygen
+ * Return: thier nose
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *ptr1;
-	char *old_ptr;
-	unsigned int t;
+	void *mem;
+	char *ptr_copy, *filler;
+	unsigned int index;
 
 	if (new_size == old_size)
 		return (ptr);
 
-	if (new_size == 0 && ptr)
+	if (ptr == NULL)
+	{
+		mem = malloc(new_size);
+
+		if (mem == NULL)
+			return (NULL);
+
+		return (mem);
+	}
+
+	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
 
-	if (!ptr)
-		return (malloc(new_size));
+	ptr_copy = ptr;
+	mem = malloc(sizeof(*ptr_copy) * new_size);
 
-	ptr1 = malloc(new_size);
-	if (!ptr1)
+	if (mem == NULL)
+	{
+		free(ptr);
 		return (NULL);
-
-	old_ptr = ptr;
-
-	if (new_size < old_size)
-	{
-		for (t = 0; t < new_size; t++)
-			ptr1[t] = old_ptr[t];
 	}
 
-	if (new_size > old_size)
-	{
-		for (t = 0; t < old_size; t++)
-			ptr1[t] = old_ptr[t];
-	}
+	filler = mem;
+
+	for (index = 0; index < old_size && index < new_size; index++)
+		filler[index] = *ptr_copy++;
 
 	free(ptr);
-	return (ptr1);
+	return (mem);
 }
