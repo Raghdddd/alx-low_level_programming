@@ -1,17 +1,18 @@
+#include <stdlib.h>
 #include "function_pointers.h"
 
 /**
- * print_name - so 
+ * print_name - say
  *
- * @name: i cut
+ * @name: my
  *
- * @f: you
+ * @f: name
  *
- * Return: off
+ * Return: RAGHD
  */
-
-void print_name(char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *name))
 {
-	if (name && f)
-		f(name);
+	if (name == NULL || f == NULL)
+		return;
+	f(name);
 }
