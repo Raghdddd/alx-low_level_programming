@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * int_index - wa 
+ * int_index - wa
  *
  * @array: inta
  *
