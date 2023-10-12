@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * op_c - jam3a 
+ * op_c - jam3a
  *
  * @form: t5mk
  *
