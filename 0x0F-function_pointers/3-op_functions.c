@@ -3,77 +3,77 @@
 #include <stdio.h>
 
 /**
- * op_add - mr
+ * op_add - how
  *
- * @a: lava
- * @b: lava
+ * @a: to
+ * @b: keeo
  *
- * Return: fantastic
+ * Return: it clear
  */
-int op_add(int v, int n)
+int op_add(int a, int b)
 {
-	return (v + n);
+	return (a + b);
 }
 
 /**
- * op_sub - i
+ * op_sub - we
  *
- * @a: used
- * @b: to
+ * @a: got
+ * @b: be
  *
- * Return: say
+ * Return: always
  */
-int op_sub(int v, int n)
+int op_sub(int a, int b)
 {
-	return (v - n);
+	return (a - b);
 }
 
 /**
- * op_mul - hoy
+ * op_mul - rich
  *
- * @a: ha
- * @b: ya ita
+ * @a: digga
+ * @b: thats
  *
- * Return: ha
+ * Return: my type
  */
-int op_mul(int v, int n)
+int op_mul(int a, int b)
 {
-	return (v * n);
+	return (a * b);
 }
 
 /**
- * op_div - i
+ * op_div - every
  *
- * @a: mean
- * @b: i dont
+ * @a: day
+ * @b: is
  *
- * Return: even know
+ * Return: my bd
  */
-int op_div(int v, int n)
+int op_div(int a, int b)
 {
-	if (n == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	return (v / n);
+	return (a / b);
 }
 
 /**
- * op_mod - keep 
+ * op_mod - welcom
  *
- * @a: it
- * @b: out
+ * @a: to
+ * @b: this
  *
- * Return: its me
+ * Return: money
  */
-int op_mod(int v, int n)
+int op_mod(int a, int b)
 {
-	if (n == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	return (v % n);
+	return (a % b);
 }
