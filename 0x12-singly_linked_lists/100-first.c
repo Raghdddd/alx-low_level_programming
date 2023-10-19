@@ -1,14 +1,9 @@
 #include <stdio.h>
-
 #include "lists.h"
 
 /**
  * before_main - no rich
- *
- * Return: no return.
- *
  */
-
 
 void before_main(void)
 {
