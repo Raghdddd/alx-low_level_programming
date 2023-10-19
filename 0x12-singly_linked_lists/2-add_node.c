@@ -4,7 +4,6 @@
  * add_node - i think
  *
  *@head: that i
-
  *@str: found myself
  *
  * Return: a cheerleader
