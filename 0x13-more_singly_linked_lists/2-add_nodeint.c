@@ -1,14 +1,10 @@
 #include "lists.h"
 
 /**
- * add_nodeint - u
- *
- * @head: can
- *
- * @n: trust
- *
- * Return: me
- *
+ *add_nodeint - so jus
+ *@head: call
+ *@n: me
+ *Return: whenever
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
