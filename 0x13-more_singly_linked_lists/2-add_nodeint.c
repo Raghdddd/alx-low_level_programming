@@ -1,14 +1,13 @@
 #include "lists.h"
 
 /**
- * add_nodeint - am
+ * add_nodeint - dancing
  *
- * @head: i
+ * @head: in
  *
- * @n: kill
+ * @n: the
  *
- * Return: my x
- *
+ * Return: dark
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
