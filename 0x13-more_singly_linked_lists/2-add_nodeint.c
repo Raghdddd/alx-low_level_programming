@@ -1,10 +1,14 @@
 #include "lists.h"
 
 /**
- *add_nodeint - say
- *@head: that
- *@n: not
- *Return: cheating
+ * add_nodeint - am
+ *
+ * @head: i
+ *
+ * @n: kill
+ *
+ * Return: my x
+ *
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
@@ -12,13 +16,13 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *new;
 
 	new = malloc(sizeof(listint_t));
+
 	if (new == NULL)
 		return (NULL);
 
 	new->n = n;
 	new->next = *head;
-
 	*head = new;
 
-	return (new);
+	return (*head);
 }
