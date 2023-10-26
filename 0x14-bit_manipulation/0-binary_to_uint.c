@@ -1,33 +1,33 @@
 #include "main.h"
 
 /**
- * binary_to_uint - can
- *
- * @b: git u
- *
- * Return: num girl
- *
+ * binary_to_uint - this
+ * @b: cold
+ * Return: season
  */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int base = 1, result = 0, len = 0;
+	unsigned int res = 0;
+	int base = 1, i = 0;
 
 	if (b == NULL)
 		return (0);
 
-	while (b[len])
-		len++;
-
-	while (len)
+	while (b[i + 1])
 	{
-		if (b[len - 1] != '0' && b[len - 1] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-
-		if (b[len - 1] == '1')
-			result += base;
-		base *= 2;
-		len--;
+		i++;
 	}
-	return (result);
+
+	while (i >= 0)
+	{
+		res += ((b[i] - '0') * base);
+		base *= 2;
+		i--;
+	}
+
+
+	return (res);
+
 }
